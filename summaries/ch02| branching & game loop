@@ -1,6 +1,6 @@
 //if statments,loops,random numbers
 #include <iostream>
-#include <cstdlb>
+#include <cstdlib>
 #include <ctime>
 using namespace std;
 
