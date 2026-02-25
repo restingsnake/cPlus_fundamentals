@@ -1,0 +1,26 @@
+//my learning summary_chapter one 
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  cout<<"===chapter 1===";
+
+string playerName;
+int score=0;
+double health=100;
+char grade='A';
+bool isGameOver=false;
+
+cout<<"enter your name:";
+cin>>playerName;
+
+cout<<"\nPlayer:"<<playerNmae<<endl;
+cout<<"score:"<<score<<endl;
+cout<<"health:"<<health<<endl;
+cout<<"grade:"<<grade<<endl;
+cout<<"GAME OVER?"<<isGameOver<<endl;
+
+return 0;
+}
