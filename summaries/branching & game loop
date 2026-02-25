@@ -1,0 +1,38 @@
+//if statments,loops,random numbers
+#include <iostream>
+#include <cstdlb>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+  cout<<"===chapter two===";
+//randome number practice
+  srand(time(0));
+  int secret=rand()%10 +1;
+  int guess;
+  int tries=0;
+ //game loop practice
+ do{
+ cout<<"guess(1-10):";
+ cin>>guess;
+ //input validation-only allow 1-10
+ if(guess<1||guess>10)
+ {
+ cout<<"invalid!please enter a number between 1 and 10.\n";
+ continue;
+ }
+ tries++;
+
+ if(guess>secret)
+ cout<<"too HIGH!\n";
+ 
+ else if (guess<secret)
+ cout<<"too LOW!\n";
+
+ else 
+ cout<<"correct in"<<tries<<"tries!\n";
+ }while(guess !=secret);
+
+ return 0;
+ }
